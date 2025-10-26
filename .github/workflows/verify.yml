@@ -72,6 +72,15 @@ jobs:
       - name: Build WASM
         uses: ./.github/actions/build-wasm
 
+      - name: Setup Rust
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install ubrn CLI
+        run: |
+          cargo install --git https://github.com/merbridge/ubrn.git
+
       - name: Run pnpm tests
         shell: bash
         run: |
