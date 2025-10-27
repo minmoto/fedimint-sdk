@@ -424,8 +424,8 @@ importers:
         version: 0.29.3-1
     devDependencies:
       '@fedimint/types':
-        specifier: workspace:*
-        version: link:../types
+        specifier: 0.0.3
+        version: 0.0.3
 
   packages/transport-react-native:
     dependencies:
@@ -433,8 +433,8 @@ importers:
         specifier: workspace:*
         version: link:../react-native
       '@fedimint/types':
-        specifier: workspace:*
-        version: link:../types
+        specifier: 0.0.3
+        version: 0.0.3
     optionalDependencies:
       expo-file-system:
         specifier: ^19.0.17
@@ -2181,6 +2181,9 @@ packages:
 
   '@fedimint/types@0.0.2':
     resolution: {integrity: sha512-5HkzOEMLVh2vJzZu+s9v+WuQccTCyPWgZj3fgBhEPt3btHG9WGZnVDDsnqKObcsbL+NoLTMu26FZJIEgxEqldg==}
+
+  '@fedimint/types@0.0.3':
+    resolution: {integrity: sha512-rOv3GjcqfnUjDuOl27hcQVpG6qky4i84DBQNmch40aM9cT8hOFjtTRnhb38K8IW5peXGRDd/HNqt2vB9aQOS1Q==}
 
   '@floating-ui/core@1.6.8':
     resolution: {integrity: sha512-7XJ9cPU+yI2QeLS+FCSlqNFZJq8arvswefkZrYI1yQBbftw6FyrZOxYSh+9S7z7TpeWlRt9zJ5IhM1WIL334jA==}
@@ -11446,6 +11449,8 @@ snapshots:
       '@fedimint/types': 0.0.2
 
   '@fedimint/types@0.0.2': {}
+
+  '@fedimint/types@0.0.3': {}
 
   '@floating-ui/core@1.6.8':
     dependencies:
