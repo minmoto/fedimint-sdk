@@ -53,8 +53,7 @@ jobs:
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
         with:
-          targets: aarch64-apple-ios-sim, x86_64-apple-ios-sim
-
+          targets: aarch64-apple-ios-sim
       - name: Setup Android NDK
         uses: android-actions/setup-android@v3
 
