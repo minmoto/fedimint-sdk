@@ -1,5 +1,5 @@
 {
-  "name": "@fedimint/react-native",
+  "name": "@minmoto/react-native",
   "version": "0.0.1-minmo",
   "description": "Fedimint client for React Native via UniFFI",
   "main": "./src/index.ts",
