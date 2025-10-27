@@ -24,7 +24,7 @@
   },
   "peerDependencies": {
     "@fedimint/react-native": "workspace:*",
-    "@fedimint/types": "workspace:*"
+    "@fedimint/types": "0.0.3"
   },
   "files": [
     "src/"
