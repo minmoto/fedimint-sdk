@@ -7,7 +7,7 @@ on:
       - toby/run-workflow
     paths:
       - 'packages/transport-react-native/**'
-      - '.github/workflows/publish-react-native.yml'
+      - '.github/workflows/publish-transport-react-native.yml'
   workflow_dispatch:
 
 jobs:
