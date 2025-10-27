@@ -1,4 +1,4 @@
-name: Publish React Native Packages
+name: Publish Transaport React Native Packages
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - main
       - toby/run-workflow
     paths:
-      - 'packages/react-native/**'
       - 'packages/transport-react-native/**'
       - '.github/workflows/publish-react-native.yml'
   workflow_dispatch:

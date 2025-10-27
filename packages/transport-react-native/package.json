@@ -1,6 +1,6 @@
 {
   "name": "@minmoto/transport-react-native",
-  "version": "0.0.2-minmo",
+  "version": "0.0.2.1-minmo",
   "description": "React Native transport layer for Fedimint client",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
