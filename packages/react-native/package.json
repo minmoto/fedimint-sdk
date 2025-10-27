@@ -36,7 +36,6 @@
     "cpp",
     "*.podspec",
     "react-native.config.js",
-    "MinmotoReactNativeFramework.xcframework",
     "ubrn.config.yaml",
     "!ios/build",
     "!android/build",
