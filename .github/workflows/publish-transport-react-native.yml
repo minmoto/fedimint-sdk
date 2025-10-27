@@ -7,6 +7,7 @@ on:
       - toby/run-workflow
     paths:
       - 'packages/react-native/**'
+      - 'packages/transport-react-native/**'
       - '.github/workflows/publish-react-native.yml'
   workflow_dispatch:
 
@@ -50,31 +51,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: aarch64-apple-darwin, aarch64-apple-ios, x86_64-apple-ios, aarch64-apple-ios-sim
-
-      - name: Cache Rust dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            packages/react-native/rust_modules
-          key: ${{ runner.os }}-cargo-${{ hashFiles('packages/react-native/ubrn.config.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-
-
-      - name: Build workspace dependencies
-        run: |
-          # Build workspace dependencies that the packages might need
-          pnpm run --filter "@fedimint/types" build || true
-
-      - name: Publish @minmoto/react-native
-        working-directory: packages/react-native
+      - name: Publish @minmoto/transport-react-native
+        working-directory: packages/transport-react-native
         run: |
           pnpm publish --access public --no-git-checks
         env:

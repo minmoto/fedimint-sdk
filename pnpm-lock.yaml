@@ -98,15 +98,15 @@ importers:
       '@fedimint/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@fedimint/react-native':
-        specifier: workspace:*
-        version: link:../../packages/react-native
-      '@fedimint/transport-react-native':
-        specifier: workspace:*
-        version: link:../../packages/transport-react-native
       '@fedimint/types':
         specifier: workspace:*
         version: link:../../packages/types
+      '@minmoto/react-native':
+        specifier: 0.0.1-minmo
+        version: 0.0.1-minmo(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
+      '@minmoto/transport-react-native':
+        specifier: workspace:*
+        version: link:../../packages/transport-react-native
       '@react-navigation/bottom-tabs':
         specifier: ^7.4.0
         version: 7.4.9(@react-navigation/native@7.1.18(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.6.1(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-screens@4.16.0(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
@@ -429,12 +429,12 @@ importers:
 
   packages/transport-react-native:
     dependencies:
-      '@fedimint/react-native':
-        specifier: workspace:*
-        version: link:../react-native
       '@fedimint/types':
         specifier: 0.0.3
         version: 0.0.3
+      '@minmoto/react-native':
+        specifier: 0.0.1-minmo
+        version: 0.0.1-minmo(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.2.2)(react@19.2.0))(react@19.2.0)
     optionalDependencies:
       expo-file-system:
         specifier: ^19.0.17
@@ -2487,6 +2487,12 @@ packages:
 
   '@microsoft/tsdoc@0.15.1':
     resolution: {integrity: sha512-4aErSrCR/On/e5G2hDP0wjooqDdauzEbIq8hIkIe5pXV0rtWJZvdCEKL0ykZxex+IxIwBp0eGeV48hQN07dXtw==}
+
+  '@minmoto/react-native@0.0.1-minmo':
+    resolution: {integrity: sha512-NEYHNkw+YquazAeVOPfLp29Wc1TZDABaItgfIklz9ksuaCjYrB7MkqQNnVmeCNo+2Q2yk6YFJ0tpMwNAM8KC4A==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
 
   '@mswjs/interceptors@0.37.6':
     resolution: {integrity: sha512-wK+5pLK5XFmgtH3aQ2YVvA3HohS3xqV/OxuVOdNx9Wpnz7VE/fnC+e1A7ln6LFYeck7gOJ/dsZV6OLplOtAJ2w==}
@@ -11796,6 +11802,18 @@ snapshots:
       resolve: 1.22.8
 
   '@microsoft/tsdoc@0.15.1': {}
+
+  '@minmoto/react-native@0.0.1-minmo(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
+      react-native: 0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0)
+      uniffi-bindgen-react-native: 0.29.3-1
+
+  '@minmoto/react-native@0.0.1-minmo(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.2.2)(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      react: 19.2.0
+      react-native: 0.81.4(@babel/core@7.28.4)(@types/react@19.2.2)(react@19.2.0)
+      uniffi-bindgen-react-native: 0.29.3-1
 
   '@mswjs/interceptors@0.37.6':
     dependencies:

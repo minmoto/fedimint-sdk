@@ -1,6 +1,6 @@
 {
-  "name": "@fedimint/transport-react-native",
-  "version": "0.1.0",
+  "name": "@minmoto/transport-react-native",
+  "version": "0.0.2-minmo",
   "description": "React Native transport layer for Fedimint client",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -23,7 +23,7 @@
     "expo-file-system": "^19.0.17"
   },
   "peerDependencies": {
-    "@fedimint/react-native": "workspace:*",
+    "@minmoto/react-native": "0.0.1-minmo",
     "@fedimint/types": "0.0.3"
   },
   "files": [

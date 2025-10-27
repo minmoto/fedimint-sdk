@@ -3,7 +3,7 @@ import {
   type TransportRequest,
   type TransportLogger,
 } from '@fedimint/types'
-import { RpcHandler } from '@fedimint/react-native'
+import { RpcHandler } from '@minmoto/react-native'
 import { documentDirectory } from 'expo-file-system/legacy'
 
 const FILE_URL_CLEANUP_REGEX = /^file:\/\/|\/$/g
