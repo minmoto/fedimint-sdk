@@ -26,7 +26,7 @@
     "ubrn:ios": "ubrn build ios --and-generate",
     "ubrn:android": "ubrn build android --and-generate",
     "prepack": "ubrn checkout && ubrn build ios --and-generate --release",
-    "prepublishOnly": "ubrn checkout && ubrn build ios --and-generate --release && ubrn build android --and-generate",
+    "prepublishOnly": "ubrn checkout && ubrn build ios --and-generate --release",
     "clean": "rm -rf android/ ios/ cpp/ src/generated/ src/NativeReactNative.ts src/index.tsx *.xcframework *.a"
   },
   "files": [
