@@ -1,6 +1,6 @@
 {
   "name": "@minmoto/react-native",
-  "version": "0.0.2-minmo",
+  "version": "0.0.3-minmo-android",
   "description": "Fedimint client for React Native via UniFFI",
   "main": "./src/index.ts",
   "react-native": "./src/index.ts",
@@ -25,7 +25,7 @@
     "ubrn:checkout": "ubrn checkout",
     "ubrn:ios": "ubrn build ios --and-generate",
     "ubrn:android": "ubrn build android --and-generate",
-    "postinstall": "ubrn checkout && ubrn build ios --and-generate --release && rm -rf rust_modules",
+    "postinstall": "ubrn checkout && ubrn build android --and-generate --release && rm -rf rust_modules",
     "clean": "rm -rf android/ ios/ cpp/ src/generated/ src/NativeReactNative.ts src/index.tsx *.xcframework *.a"
   },
   "files": [
