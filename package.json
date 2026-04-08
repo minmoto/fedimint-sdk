@@ -66,6 +66,11 @@
     "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@9.15.9",
+  "pnpm": {
+    "overrides": {
+      "dom-serializer@2.0.0>entities": "4.4.0"
+    }
+  },
   "engines": {
     "node": "22.x"
   },
