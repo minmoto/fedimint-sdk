@@ -1,4 +1,4 @@
-# @fedimint/react-native
+# @minmoto/react-native
 
 React Native SDK for Fedimint - the easiest way to integrate Fedimint into your React Native app.
 
@@ -11,11 +11,11 @@ Depending on your project setup, you can use the SDK with or without Expo. Choos
 #### Installation
 
 ```bash
-npm install @fedimint/react-native
+npm install @minmoto/react-native
 # or
-yarn add @fedimint/react-native
+yarn add @minmoto/react-native
 # or
-pnpm add @fedimint/react-native
+pnpm add @minmoto/react-native
 ```
 
 You'll also need `react-native-fs` for database storage:
@@ -27,7 +27,7 @@ npm install react-native-fs
 #### Usage
 
 ```typescript
-import WalletDirector from '@fedimint/react-native'
+import WalletDirector from '@minmoto/react-native'
 import RNFS from 'react-native-fs'
 
 // Create a wallet director with a database path
@@ -51,7 +51,7 @@ const balance = await wallet.balance.getBalance()
 #### Installation
 
 ```bash
-npx expo install @fedimint/react-native expo-file-system
+npx expo install @minmoto/react-native expo-file-system
 ```
 
 For Expo managed workflow (SDK 52+), add the plugin to your `app.json`:
@@ -59,7 +59,7 @@ For Expo managed workflow (SDK 52+), add the plugin to your `app.json`:
 ```json
 {
   "expo": {
-    "plugins": ["@fedimint/react-native"]
+    "plugins": ["@minmoto/react-native"]
   }
 }
 ```
@@ -78,7 +78,7 @@ npx expo run:android
 #### Usage
 
 ```typescript
-import WalletDirector from '@fedimint/react-native'
+import WalletDirector from '@minmoto/react-native'
 import { Paths } from 'expo-file-system'
 
 // Prepare Database Path
@@ -111,7 +111,7 @@ This is required for Expo managed workflow.
   "expo": {
     "plugins": [
       [
-        "@fedimint/react-native",
+        "@minmoto/react-native",
         {
           "skipBinaryDownload": false
         }
@@ -128,7 +128,7 @@ You can choose to build the SDK from scratch (recompile from source) and skip th
 1. **Using an environment variable:**
 
    ```bash
-   FEDIMINT_SKIP_BINARY_DOWNLOAD=true npm install @fedimint/react-native
+   FEDIMINT_SKIP_BINARY_DOWNLOAD=true npm install @minmoto/react-native
    ```
 
 2. **Using the Expo plugin option** (for Expo projects):
@@ -157,17 +157,17 @@ This is useful when you want to handle binary downloads manually or are building
 
 ```typescript
 // Default export - simplified WalletDirector
-import WalletDirector from '@fedimint/react-native'
+import WalletDirector from '@minmoto/react-native'
 
 // Named exports for advanced usage
 import {
   WalletDirector, // Class with built-in transport
   ReactNativeTransport, // Transport layer (for custom setups)
   TransportClient, // Low-level client
-} from '@fedimint/react-native'
+} from '@minmoto/react-native'
 
 // Types
-import type { FedimintWallet } from '@fedimint/react-native'
+import type { FedimintWallet } from '@minmoto/react-native'
 ```
 
 ## License

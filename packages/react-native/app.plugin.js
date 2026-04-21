@@ -1,2 +1,2 @@
-// Re-export the Expo plugin from @fedimint/react-native-bindings
-module.exports = require('@fedimint/react-native-bindings/app.plugin.js')
+// Re-export the Expo plugin from @minmoto/react-native-bindings
+module.exports = require('@minmoto/react-native-bindings/app.plugin.js')

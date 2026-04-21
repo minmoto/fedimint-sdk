@@ -4,7 +4,7 @@ import {
   type TransportRequest,
 } from '@fedimint/types'
 
-import { RpcHandler } from '@fedimint/react-native-bindings'
+import { RpcHandler } from '@minmoto/react-native-bindings'
 
 export class ReactNativeTransport extends Transport {
   logger: TransportLogger = console

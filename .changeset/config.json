@@ -8,7 +8,8 @@
       "@fedimint/fedimint-client-wasm-bundler",
       "@fedimint/fedimint-client-wasm-web"
     ],
-    ["@fedimint/core-web", "@fedimint/core"]
+    ["@fedimint/core-web", "@fedimint/core"],
+    ["@minmoto/react-native", "@minmoto/react-native-bindings"]
   ],
   "access": "public",
   "baseBranch": "main",

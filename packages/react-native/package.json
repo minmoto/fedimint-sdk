@@ -1,10 +1,10 @@
 {
-  "name": "@fedimint/react-native",
+  "name": "@minmoto/react-native",
   "description": "React Native SDKfor the Fedimint client",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fedimint/fedimint-sdk.git",
+    "url": "https://github.com/minmoto/fedimint-sdk.git",
     "directory": "packages/react-native"
   },
   "main": "./lib/commonjs/index.js",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@fedimint/core": "workspace:*",
-    "@fedimint/react-native-bindings": "workspace:*",
+    "@minmoto/react-native-bindings": "workspace:*",
     "@fedimint/types": "workspace:*"
   },
   "peerDependencies": {

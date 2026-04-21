@@ -1,5 +1,5 @@
-import WalletDirector from '@fedimint/react-native'
-import type { FedimintWallet } from '@fedimint/react-native'
+import WalletDirector from '@minmoto/react-native'
+import type { FedimintWallet } from '@minmoto/react-native'
 import { Paths } from 'expo-file-system'
 
 // Paths.document.uri is a file:// URI; the Rust FFI layer needs a raw path

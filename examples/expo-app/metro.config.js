@@ -15,11 +15,11 @@ config.resolver.disableHierarchicalLookup = true
 
 // Map all workspace packages to their source directories
 config.resolver.extraNodeModules = {
-  '@fedimint/react-native-bindings': path.resolve(
+  '@minmoto/react-native-bindings': path.resolve(
     __dirname,
     '../../packages/react-native-bindings',
   ),
-  '@fedimint/react-native': path.resolve(
+  '@minmoto/react-native': path.resolve(
     __dirname,
     '../../packages/react-native',
   ),
