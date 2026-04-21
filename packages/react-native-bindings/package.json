@@ -1,5 +1,5 @@
 {
-  "name": "@fedimint/react-native-bindings",
+  "name": "@minmoto/react-native-bindings",
   "version": "0.1.0",
   "description": "Fedimint Client SDK for React-Native",
   "source": "./src/index.tsx",
@@ -69,14 +69,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedimint/fedimint-sdk.git"
+    "url": "git+https://github.com/minmoto/fedimint-sdk.git"
   },
   "author": "Fedimint Developers <reach.oms2004@gmail.com> (https://github.com/fedimint)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fedimint/fedimint-sdk/issues"
+    "url": "https://github.com/minmoto/fedimint-sdk/issues"
   },
-  "homepage": "https://github.com/fedimint/fedimint-sdk#readme",
+  "homepage": "https://github.com/minmoto/fedimint-sdk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

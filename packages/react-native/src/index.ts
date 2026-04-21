@@ -11,7 +11,7 @@ import type { FedimintWallet } from '@fedimint/core'
  *
  * @example
  * ```typescript
- * import WalletDirector from '@fedimint/react-native';
+ * import WalletDirector from '@minmoto/react-native';
  * import RNFS from 'react-native-fs';
  *
  * const dbPath = `${RNFS.DocumentDirectoryPath}/fedimint_db`;
@@ -25,7 +25,7 @@ export class WalletDirector extends BaseWalletDirector {
   }
 }
 
-// Default export for simple usage: import WalletDirector from '@fedimint/react-native'
+// Default export for simple usage: import WalletDirector from '@minmoto/react-native'
 export default WalletDirector
 
 // Named exports for advanced users

@@ -1,5 +1,5 @@
-import WalletDirector from '@fedimint/react-native'
-import type { FedimintWallet } from '@fedimint/react-native'
+import WalletDirector from '@minmoto/react-native'
+import type { FedimintWallet } from '@minmoto/react-native'
 import RNFS from 'react-native-fs'
 
 const dbPath = `${RNFS.DocumentDirectoryPath}/fedimint_db`

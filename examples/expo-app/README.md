@@ -1,8 +1,9 @@
 # Fedimint Expo Example App
 
-This is a sample application demonstrating how to integrate and use the `@fedimint/react-native` SDK with [Expo Router](https://docs.expo.dev/router/introduction/) file-based navigation.
+This is a sample application demonstrating how to integrate and use the `@minmoto/react-native` SDK with [Expo Router](https://docs.expo.dev/router/introduction/) file-based navigation.
 
 This app serves two primary purposes:
+
 1. **Developer Sandbox:** A convenient environment for the SDK maintainers to test local changes to the native bindings and JavaScript APIs.
 2. **Usage Example:** A reference implementation for developers on how to initialize a Fedimint client, connect to a federation, and perform basic operations using the React Native SDK.
 
@@ -38,7 +39,7 @@ cd examples/expo-app
 
 ### Running on iOS
 
-First, install the CocoaPods dependencies. Since this app uses local paths to reference the React Native bindings, you must run pod install *after* the `pnpm build` step at the monorepo root.
+First, install the CocoaPods dependencies. Since this app uses local paths to reference the React Native bindings, you must run pod install _after_ the `pnpm build` step at the monorepo root.
 
 ```sh
 cd ios
